@@ -1,0 +1,182 @@
+
+body {
+    flex: 1;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.wrapper-navbar {
+    background-color: black;
+}
+
+#navbar-principal {
+    padding: 15px;
+}
+
+
+
+.nav-items {
+    padding: 15px 30px 15px 30px;
+}
+
+.nav-items a {
+    padding: 0px 15px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: #E5E5E5;
+}
+
+.nav-items a.active {
+    color: #FCA311;
+}
+
+.nav-items a:hover {
+    color: #FCA311;
+}
+
+.text-banner {
+    /*margin-top: 100px;*/
+    text-shadow: 0 0 5px #000;
+}
+
+.wrapper-content {
+    overflow: hidden;
+}
+
+.wrapper-body {
+    background-color: #14213D;
+    padding: 120px 0px;
+    min-height: 500px;
+    color: #FCA311;
+    letter-spacing: 4px;
+    /*background-image: url("https://wallpaperaccess.com/full/5651981.jpg"); CLARINHA*/
+    background-image: url("https://wallpaperaccess.com/full/5652030.jpg");
+    background-size: cover;
+    background-position-y: bottom;
+    overflow: hidden;
+}
+
+.blur {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper-sections {
+    background-color: #000;
+    padding: 20px 0px;
+}
+
+.section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0px;
+    color: #E5E5E5;
+}
+
+.wrapper-sections .container {
+    /*background-color: #515451;*/
+    padding: 20px 0px;
+}
+
+.header-section span {
+    color: #FCA311;
+    text-decoration: overline;
+    text-decoration-thickness: 3px;
+}
+
+.header-section {
+    text-decoration: underline;
+    text-decoration-color: #FCA311;
+    text-decoration-thickness: 6px;
+    letter-spacing: 3.5px;
+}
+
+.content-section {
+    padding: 20px 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.table {
+    color: white;
+}
+
+.table th {
+    color: #FCA311 ;
+}
+
+.content-section p:first-letter{
+    font-size: 50px;
+    padding-right: 10px;
+    line-height: 48px;
+    float: left;
+}
+
+/* TESTE */
+.btn-custom {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #FCA311;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #000;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn-custom:hover {
+  transition: 1s ease-in-out;
+  background: #FCA311;
+}
+
+.btn-custom:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn-custom span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.btn-custom:hover span {
+    color: black;
+}
+
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+
+.form-horizontal {
+    margin-top: 35px;
+}
+
+.form-control, text-area {
+    background-color: #000 !important;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.send-button {
+    width: 100%;
+    font-weight:bold;
+}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+History
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Shares</th>
+      <th>Price</th>
+      <th>Transacted</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in history %}
+    <tr>
+      <td>{{item['symbol']}}</td>
+      {% if item['operation'] == "purchase" %}
+      <td>{{item['quantity']}}</td>
+      {% else %}
+      <td>-{{item['quantity']}}</td>
+      {% endif %}
+      <td>{{item['price_operation']}}</td>
+      <td>{{item['operation_date']}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,1 @@
+SELECT people.name FROM movies, stars, people WHERE stars.person_id = people.id AND movies.id = stars.movie_id AND movies.title = "Toy Story";
